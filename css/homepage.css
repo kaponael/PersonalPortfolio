@@ -1,0 +1,33 @@
+/*desktop*/
+@media (min-width: 768px) {
+
+    .content {
+        padding-top: 7vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.875rem;
+        cursor: default;
+        margin: 0px 9em;
+    }
+
+    .text{
+        font-size: 3em;
+        font-weight: bold;
+        color: #D1DDED;
+        font-weight: 600;
+    }
+
+    .highlight{
+        color:#3684DB;
+        font-weight: 900;
+    }
+
+}
+
+/*phone*/
+@media (max-width: 767px) {
+    .navbar-desktop {
+        display: none;
+    }
+}
