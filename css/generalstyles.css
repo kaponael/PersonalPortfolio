@@ -274,20 +274,6 @@ button {
         margin: 0 1em;
     }
 
-    .header {
-        
-        font-weight: bold;
-        color: transparent;
-        text-align: center;
-        -webkit-text-stroke: 1px var(--main-used-color);
-        margin: 0;
-        overflow: hidden;
-        position: relative;
-        left: -7.5vw;
-        letter-spacing: 0.15em;
-        overflow: visible;
-    }
-
     .buttons {
         flex-direction: column;
         row-gap: 1em;
