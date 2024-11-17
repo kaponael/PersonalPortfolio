@@ -1,51 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --main-bg-color: #1F1F1F;
+    --secondary-bg-color: #181818;
+    --main-text-color: #D1DDED;
+    --main-used-color: #3684DB;
+}
+
 body, head {
     background-color: #1F1F1F;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-/*desktop*/
-@media (min-width: 1280px) {
-    nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 0 20px; 
-        background-color: #181818;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        box-sizing: border-box; 
-        height: 7vh; 
-    }
-
-    nav img {
-        height:5vh;
-    }
-    nav a {
-        text-decoration: none;
-        color: #D1DDED;
-        font-weight: bold;
-        font-family: 'Kumbh Sans', sans-serif; 
-        margin: 0 10px;
-        padding: 0 20px; 
-        line-height: 7vh; 
-        white-space: nowrap;
-        display: inline-block; 
-        height: 100%; 
-        box-sizing: border-box; 
-        transition: background .25s, box-shadow .15s;
-    }
-
-    nav a:hover {
-        background: #3684DB;
-    }
-
+.header {
+    font-size: 15vw; 
+    font-weight: bold;
+    color: transparent;
+    text-align: left; 
+    -webkit-text-stroke: 0.5vh var(--main-used-color);
+    margin: 0;
+    display: flex; 
+    position: relative;
+    left: -11vw; 
+    letter-spacing: 0.3vw; 
+    white-space: nowrap; 
+    word-spacing: 0.1vw;
 }
 
-/*phone*/
-@media (min-width: 480px) {
+.content{
+    margin-bottom: 10em;
+    text-align: center;
+    width: 100%;
+}
+
+h2{
+    font-size: 4em;
+    text-align: center;
+    font-weight:800;
+    color: transparent;
+    -webkit-text-stroke: 0.1vh var(--main-used-color);
+}
+
+.mainpart{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    padding: 1.25em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    text-align: left;
+    color: var(--main-text-color);
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 25vw;
+    padding: 0.9em;
+    margin-bottom: 0.625em;
+    border: 0.15em solid #3684DB;
+    border-radius: 0.8em;
+    background-color: transparent;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+input[type="submit"] {
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 100%;
+    background-color: var(--main-used-color);
+    color: var(--main-bg-color);
+    font-weight: 700;
+    padding: 0.6em 1.25em;
+    border: none;
+    border-radius: 0.6em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--main-text-color);
+}
+
+textarea {
+    resize: none; 
+    color: var(--main-text-color);
+}
+
+.contactinfo{
+    width: 5%;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;  
+}
+
+.info{
+        background-color: var(--secondary-bg-color);
+        padding: 2em;
+        border-radius: 2em;
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        justify-content: center;
+}
+
+.info a{
+    text-decoration: none;
+}
+
+
+/* Desktop */
+@media (min-width: 760px) {
+ 
+}
+
+/* Mobile */
+@media (max-width: 759px) {
+    
 
 }
