@@ -32,6 +32,7 @@ head {
 
 .content {
     padding-top: 7vh;
+    padding-bottom: 10vh;
     cursor: default;
 }
 
@@ -44,9 +45,10 @@ h2{
 }
 
 h3{
-    font-size: 1.875em;
+    font-size: 1.2em;
     text-align: center;
     font-weight:800;
+    margin: 0;
     color: var(--main-used-color);
 }
 
@@ -253,8 +255,7 @@ button {
 
     .content {
         flex-direction: column;
-        row-gap: 1.875em;
-        margin: 0 9em;
+        /* margin: 0 9em; */
     }
 
     .socials ul {
