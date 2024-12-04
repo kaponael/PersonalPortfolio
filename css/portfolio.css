@@ -33,7 +33,6 @@ h2{
 .mainpart{
     display: flex;
     flex-direction: row;
-    gap:4em;
     justify-content: center;
 
 }
@@ -64,11 +63,20 @@ h2{
     justify-content: center;
 }
 
+.project a{
+    text-decoration: none;
+}
+
+.project img {
+    width: 10vw;
+}
+
 /* Desktop */
 @media (min-width: 760px) {
    .projectlist{
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(2,1fr);
+    gap: 4em;
    }
 }
 
