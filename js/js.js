@@ -22,8 +22,8 @@ class Navbar extends HTMLElement {
 
 function downloadPDF() {
     const link = document.createElement('a');
-    link.href = 'content/EleniKaponaCV.pdf';
-    link.download = 'EleniKaponaCV.pdf';
+    link.href = 'content/Eleni_Kapona_Resume.pdf';
+    link.download = 'Eleni_Kapona_Resume.pdf';
     link.click();
 }
 

@@ -7,41 +7,42 @@
     --main-used-color: #3684DB;
 }
 
-body, head {
+body,
+head {
     background-color: #1F1F1F;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
 .header {
-    font-size: 15vw; 
+    font-size: 18em;
     font-weight: bold;
     color: transparent;
-    text-align: left; 
+    text-align: left;
     -webkit-text-stroke: 0.5vh var(--main-used-color);
     margin: 0;
-    display: flex; 
+    display: flex;
     position: relative;
-    left: -2.5vw; 
-    letter-spacing: 0.3vw; 
-    white-space: nowrap; 
+    left: -2.5vw;
+    letter-spacing: 0.3vw;
+    white-space: nowrap;
     word-spacing: 0.1vw;
 }
 
-.content{
+.content {
     margin-bottom: 10em;
     text-align: center;
     width: 100%;
 }
 
-h2{
+h2 {
     font-size: 4em;
     text-align: center;
-    font-weight:800;
+    font-weight: 800;
     color: transparent;
     -webkit-text-stroke: 0.1vh var(--main-used-color);
 }
 
-.mainpart{
+.mainpart {
     display: flex;
     flex-direction: column;
     row-gap: 1.5em;
@@ -50,7 +51,7 @@ h2{
     justify-content: center;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     row-gap: 2em;
@@ -64,7 +65,9 @@ label {
     color: var(--main-text-color);
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
     width: 25vw;
     padding: 0.9em;
     margin-bottom: 0.625em;
@@ -91,25 +94,22 @@ input[type="submit"]:hover {
 }
 
 textarea {
-    resize: none; 
+    resize: none;
     color: var(--main-text-color);
 }
 
-.contactinfo{
+.contactinfo {
     display: grid;
-    grid-template-columns: repeat(4,1fr);  
-    column-gap: 2em;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1em;
     transition: fill 0.2s ease;
-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
 }
 
-.contactinfo a {
+/* .contactinfo a {
     color: var(--main-used-color);
-}
+} */
 
-.contactinfo a:visited {
-    color: var(--main-used-color);
-}
 .contactinfo i {
     transition: fill 0.2s ease;
     transition: background-color 0.2s ease;
@@ -120,27 +120,22 @@ transition: background-color 0.2s ease;
     background-color: var(--main-used-color);
 }
 
-.contactinfo i:hover {
-    color: var(--secondary-bg-color);
+.info:hover i {
+    color: var(--main-text-color);
 }
 
 
 
-.info{
-        background-color: var(--secondary-bg-color);
-        padding: 2em;
-        border-radius: 2em;
-        justify-content: center;
-        border: 0.2em solid var(--main-used-color);
+.info {
+    background-color: var(--secondary-bg-color);
+    padding: 2em;
+    border-radius: 2em;
+    justify-content: center;
+    border: 0.2em solid var(--main-used-color);
 }
 
 /* Desktop */
-@media (min-width: 760px) {
- 
-}
+@media (min-width: 760px) {}
 
 /* Mobile */
-@media (max-width: 759px) {
-    
-
-}
+@media (max-width: 759px) {}

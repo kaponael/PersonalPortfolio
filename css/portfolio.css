@@ -9,12 +9,14 @@ body, head {
     color: transparent;
     text-align: left; 
     -webkit-text-stroke: 0.5vh var(--main-used-color);
-    margin: 0;
-    display: block; 
-    position: relative;
-    left: -2.5vw; 
     letter-spacing: 2vw; 
     white-space: nowrap; 
+    margin: 0;
+    position: relative;
+    left: -2.5vw; 
+    /* padding: 5em 0; */
+    /* width: 100%; */
+
 }
 .content{
     margin-bottom: 10em;
@@ -38,8 +40,12 @@ h2{
 }
 
 .projectlist{
-    display: grid;
-    gap: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3em;
+    padding: 0 8em;
 }
 
 .name{
@@ -54,36 +60,77 @@ h2{
 }
 
 .project{
-    background-color: var(--secondary-bg-color);
-    padding: 2em;
+    position: relative;
     border-radius: 2em;
+    border: 1px solid var(--main-used-color);
+    display: inline-block;
+    overflow: hidden;
+    aspect-ratio: auto;
+    width: 20vw;
+}
+
+.project .heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    row-gap: 1em;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    /* background: var(--main-bg-color); */
+    padding: 1em;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.heading .links{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5em;
+}
+
+.project:hover .heading {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .project a{
     text-decoration: none;
 }
 
+a i{
+    color: var(--main-used-color);
+}
+
 .project img {
-    width: 10vw;
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: blur(0);
+    transition: filter 0.3s ease;
+}
+
+.project:hover img {
+    filter: blur(5px) opacity(20%);
 }
 
 /* Desktop */
-@media (min-width: 760px) {
+/* @media (min-width: 760px) {
    .projectlist{
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 4em;
    }
-}
+} */
 
 /* Mobile */
-@media (max-width: 759px) {
+/* @media (max-width: 759px) {
     .projectlist{
         grid-template-rows: repeat(4,1fr);
        }
 
-}
+} */
