@@ -238,6 +238,10 @@ nav a.active {
     background-color: var(--main-used-color);
 }
 
+a .nav-logo.active{
+    background-color: transparent;
+}
+
 nav a:hover {
     background: var(--main-used-color);
     cursor: pointer;
