@@ -4,7 +4,7 @@ class Navbar extends HTMLElement {
 <nav id="mynav">
     <div class="top-row">
         <div class="nav-logo">
-            <a href="homepage.html">
+            <a href="/">
                 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 52" width="66" height="52">
                     <title>logo</title>
                     <style>
@@ -22,10 +22,10 @@ class Navbar extends HTMLElement {
         </div>
     </div>
 
-    <div class="nav-item"><a href="homepage.html">.homepage</a></div>
-    <div class="nav-item"><a href="aboutme.html">.aboutme</a></div>
+    <div class="nav-item"><a href="/">.homepage</a></div>
+    <div class="nav-item"><a href="/aboutme">.aboutme</a></div>
     <div class="nav-logo desktop-logo">
-        <a href="homepage.html">
+        <a href="/">
             <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 52" width="66" height="52">
                 <title>logo</title>
                 <style>
@@ -36,8 +36,8 @@ class Navbar extends HTMLElement {
             </svg>
         </a>
     </div>
-    <div class="nav-item"><a href="portfolio.html">.portfolio</a></div>
-    <div class="nav-item"><a href="contactme.html">.contactme</a></div>
+    <div class="nav-item"><a href="/portfolio">.portfolio</a></div>
+    <div class="nav-item"><a href="/contactme">.contactme</a></div>
 </nav>
 `;
     }
