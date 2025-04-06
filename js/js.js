@@ -43,6 +43,19 @@ class Navbar extends HTMLElement {
     }
 }
 
+  if (window.location.pathname === "/homepage.html") {
+    window.location.replace("/");
+  }
+  if (window.location.pathname === "/aboutme.html") {
+    window.location.replace("/aboutme");
+  }
+  if (window.location.pathname === "/portfolio.html") {
+    window.location.replace("/portfolio");
+  }
+  if (window.location.pathname === "/contactme.html") {
+    window.location.replace("/contactme");
+  }
+
 function downloadPDF() {
     const link = document.createElement('a');
     link.href = 'content/Eleni_Kapona_Resume.pdf';
