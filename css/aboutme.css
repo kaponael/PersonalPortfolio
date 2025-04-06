@@ -11,7 +11,8 @@ body, head {
     background-color: #1F1F1F;
     font-family: 'Kumbh Sans', sans-serif;
 }
-.header {
+
+/* .header {
     font-size: 15vw; 
     font-weight: bold;
     color: transparent;
@@ -24,12 +25,18 @@ body, head {
     letter-spacing: 3.3vw; 
     white-space: nowrap; 
     word-spacing: 0.1vw;
+} */
+
+.content{
+    flex-grow: 1;
+    /* margin-bottom: 10em;
+    text-align: center; */
 }
 
-/* .content{
-    margin-bottom: 10em;
-    text-align: center;
-} */
+.content h2{
+  color:var(--main-used-color);
+  -webkit-text-stroke-color: transparent;
+}
 
 .part{
     background-color: var(--secondary-bg-color);
@@ -78,6 +85,7 @@ body, head {
         flex-direction: row;
         justify-content: center;
         gap: 2em;
+        flex-wrap: wrap;
     }
 
     .textsection{
@@ -89,6 +97,7 @@ body, head {
     .skills{
         flex-direction: column;
         gap: 1em;
+        align-items: center;
     }
 
     .textsection{

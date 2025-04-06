@@ -7,35 +7,44 @@
     --main-used-color: #3684DB;
 }
 
-body,
-head {
-    background-color: #1F1F1F;
-    font-family: 'Kumbh Sans', sans-serif;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-.header {
-    font-size: 18em;
-    font-weight: bold;
-    color: transparent;
-    text-align: left;
-    -webkit-text-stroke: 0.5vh var(--main-used-color);
+html, body {
+    height: 100%;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Kumbh Sans', sans-serif;
     display: flex;
-    position: relative;
-    left: -2.5vw;
-    letter-spacing: 0.3vw;
-    white-space: nowrap;
-    word-spacing: 0.1vw;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .content {
-    margin-bottom: 10em;
-    text-align: center;
+    flex-grow: 1;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    text-align: center;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.content h1 {
+    align-items: center;
 }
 
 h2 {
-    font-size: 4em;
+    font-size: clamp(2em, 5vw, 4em);
     text-align: center;
     font-weight: 800;
     color: transparent;
@@ -46,7 +55,6 @@ h2 {
     display: flex;
     flex-direction: column;
     row-gap: 1.5em;
-    padding: 1.25em;
     align-items: center;
     justify-content: center;
 }
@@ -55,6 +63,9 @@ form {
     display: flex;
     flex-direction: column;
     row-gap: 2em;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 label {
@@ -68,13 +79,13 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 25vw;
+    width: 100%;
     padding: 0.9em;
-    margin-bottom: 0.625em;
-    border: 0.15em solid #3684DB;
+    border: 0.15em solid var(--main-used-color);
     border-radius: 0.8em;
     background-color: transparent;
     font-family: 'Kumbh Sans', sans-serif;
+    color: var(--main-text-color);
 }
 
 input[type="submit"] {
@@ -91,40 +102,34 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: var(--main-text-color);
+    color: var(--main-bg-color);
 }
 
 textarea {
     resize: none;
-    color: var(--main-text-color);
 }
 
 .contactinfo {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 1em;
-    transition: fill 0.2s ease;
-    transition: background-color 0.2s ease;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 2em;
+    column-gap: 3em;
+    justify-content: center;
 }
 
-/* .contactinfo a {
-    color: var(--main-used-color);
-} */
-
 .contactinfo i {
-    transition: fill 0.2s ease;
-    transition: background-color 0.2s ease;
-    color: #3684DB;
+    color: var(--main-used-color);
+    transition: color 0.3s ease;
 }
 
 .contactinfo .info:hover {
     background-color: var(--main-used-color);
 }
 
-.info:hover i {
+.info:hover i{
     color: var(--main-text-color);
 }
-
-
 
 .info {
     background-color: var(--secondary-bg-color);
@@ -133,9 +138,3 @@ textarea {
     justify-content: center;
     border: 0.2em solid var(--main-used-color);
 }
-
-/* Desktop */
-@media (min-width: 760px) {}
-
-/* Mobile */
-@media (max-width: 759px) {}

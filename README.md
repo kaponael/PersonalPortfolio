@@ -6,3 +6,5 @@
 #### 0.4.0 - Made the about me and contact me page
 #### 0.4.1 - changes to responsivenesss
 #### 0.5.0 - MAde the portfolio page and fixes on contact me page
+#### 0.5.1 - Fixed the header in every page, and responsiveness for everypage besides contact me
+#### 0.5.2 - fixed navbar for mobile view
