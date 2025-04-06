@@ -419,7 +419,7 @@ nav a:hover {
     }
 
     .content {
-        padding-top: 12vh 0;
+        padding: 15vh 0;
         flex-direction: column;
         row-gap: 5em;
     }
