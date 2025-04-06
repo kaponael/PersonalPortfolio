@@ -19,8 +19,14 @@
     <div class="content">
         <h1 class="header">CONTACT ME</h1>
         <div class="mainpart">
-            <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact">
+            <form name="contact" data-netlify="true" netlify-honeypot="bot-field" netlify>
+                <input type="hidden" name="form-name" value="contact" />
+                <p hidden>
+                  <label
+                    >Don’t fill this out if you're human:
+                    <input name="bot-field"
+                  /></label>
+                </p>
                 <div>
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" placeholder="Name Surname" required>

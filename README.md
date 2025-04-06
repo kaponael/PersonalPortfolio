@@ -3,7 +3,7 @@
 
 Welcome to my personal developer portfolio! This site was built from scratch using only HTML, CSS, and JavaScript — no frameworks or libraries — to demonstrate my frontend skills, responsive design abilities, and overall web dev creativity.
 
-You can [view the live demo here](#) *(insert link when ready)*
+You can [view the live demo here](https://www.elkapshub.com/)
 
 ---
 
