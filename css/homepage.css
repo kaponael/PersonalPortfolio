@@ -49,8 +49,8 @@
 
 }
 
-/*phone*/
-@media (max-width: 767px) {
+/* Mobile + Tablet */
+@media (max-width: 1024px) {
     .navbar-desktop {
         display: none;
     }

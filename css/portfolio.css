@@ -137,8 +137,8 @@ a i {
     }
 }
 
-/* Mobile */
-@media (max-width: 768px) {
+/* Mobile  Tablet */
+@media (max-width: 1024px) {
     .header {
         font-size: clamp(2.5em, 6vw, 8em);
     }
