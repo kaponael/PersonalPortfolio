@@ -310,8 +310,8 @@ nav a:hover {
 
 }
 
-/* Mobile */
-@media (max-width: 759px) {
+/* Mobile + Tablet */
+@media (max-width: 1024px) {
     .top-row {
         display: block;
     }
