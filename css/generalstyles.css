@@ -224,7 +224,7 @@ nav a {
     font-weight: bold;
     font-family: 'Kumbh Sans', sans-serif;
     margin: 0 0.2em;
-    padding: 0 6em;
+    padding: 0 clamp(1em, 5vw, 6em);
     line-height: 7vh;
     white-space: nowrap;
     display: inline-flex;
