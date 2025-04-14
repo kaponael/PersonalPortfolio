@@ -70,5 +70,8 @@ const path = window.location.pathname;
   }
 
 function openPDFInNewTab() {
-  window.open('content/Eleni_Kapona_Resume.pdf', '_blank');
+  const link = document.createElement('a');
+  link.href = 'content/Eleni_Kapona_Resume.pdf';
+  link.target = '_blank';
+  link.click()
 }
