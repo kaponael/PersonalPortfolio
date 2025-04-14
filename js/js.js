@@ -45,10 +45,7 @@ const path = window.location.pathname;
     <div class="nav-item"><a href="/portfolio">.portfolio</a></div>
     <div class="nav-item"><a href="/contactme">.contactme</a></div>
 </nav>
-;
-    }
-}
-      `;
+`;
 
       const navLinks = this.querySelectorAll("a");
       const currentPath = window.location.pathname;
@@ -72,9 +69,9 @@ const path = window.location.pathname;
     el.classList.toggle("open");
   }
 
-  function downloadPDF() {
+  function openPDFInNewTab() {
     const link = document.createElement('a');
     link.href = 'content/Eleni_Kapona_Resume.pdf';
-    link.download = 'Eleni_Kapona_Resume.pdf';
+    link.target = '_blank';
     link.click();
-  }
+  }  
