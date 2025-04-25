@@ -124,10 +124,6 @@ a i {
 
 /* Tablet */
 @media (min-width: 769px) {
-    html, body {
-        overflow: hidden;
-    }
-
     .header {
         font-size: clamp(3em, 8vw, 10em);
     }
