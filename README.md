@@ -9,7 +9,7 @@ You can [view the live demo here](https://www.elkapshub.com/)
 
 ## Changelog
 
-### `1.1.0` – Initial Setup
+### `0.1.0` – Initial Setup
 - Created the foundational folder structure (HTML, CSS, JS).
 - Set up the homepage file and base structure.
 - Added links between all necessary HTML pages.

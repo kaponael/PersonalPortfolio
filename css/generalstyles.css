@@ -55,6 +55,16 @@ head {
     user-select: none;
 }
 
+.body{
+    .page-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+}
+
 .content {
     padding-top: 7vh;
     padding-bottom: 10vh;
@@ -142,8 +152,8 @@ button {
     content: '';
     position: absolute;
     top: 0;
-    left: -200%; /* More offset */
-    width: 300%;  /* Cover enough area for the shimmer */
+    left: -200%;
+    width: 300%;
     height: 100%;
     background: linear-gradient(
         120deg,
