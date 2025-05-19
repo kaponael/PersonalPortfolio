@@ -98,7 +98,6 @@ h2 {
 
 .project:hover .heading {
     opacity: 1;
-    cursor: pointer;
 }
 
 .project a {
