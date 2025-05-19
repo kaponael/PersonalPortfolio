@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
-
 body, head {
-    
     background-color: #1F1F1F;
     font-family: 'Kumbh Sans', sans-serif;
 }
@@ -104,8 +101,10 @@ h2 {
     text-decoration: none;
 }
 
-a i {
-    color: var(--main-used-color);
+a svg {
+    fill: var(--main-used-color);
+    width: 2em;
+    height: 2em;
 }
 
 .project img {
