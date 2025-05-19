@@ -25,6 +25,16 @@ body {
     overflow: hidden;
 }
 
+main{
+    max-width:none;
+    margin: 0px auto ;
+}
+
+h1.header{
+    text-wrap: wrap;
+    width: fit-content;
+}
+
 .content {
     flex-grow: 1;
     width: 100%;
@@ -63,6 +73,7 @@ form {
     width: 80%;
     margin: 0 auto;
     padding: 0;
+    max-width:1400px
 }
 
 label {
@@ -115,22 +126,29 @@ textarea {
     justify-content: center;
 }
 
-.contactinfo i {
-    color: var(--main-used-color);
+.contactinfo svg {
+    fill: #3684DB;
     transition: color 0.3s ease;
+    width: 2.5em;
+    height: 2.5em;
 }
 
-.contactinfo .info:hover {
+/* .contactinfo .info:hover{
     background-color: var(--main-used-color);
+} */
+
+.info:hover{
+    background-color: var(--main-used-color);
+    transition: transform 0.2s ease;
 }
 
-.info:hover i{
-    color: var(--main-text-color);
+.info:hover svg {
+    fill: var(--secondary-bg-color);
 }
 
 .info {
     background-color: var(--secondary-bg-color);
-    padding: 2em;
+    padding: 1em 2em;
     border-radius: 2em;
     justify-content: center;
     border: 0.2em solid var(--main-used-color);

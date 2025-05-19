@@ -138,13 +138,10 @@ a i {
         font-size: clamp(2.5em, 6vw, 8em);
     }
 
-    .content{
-        align-items: center;
-    }
-
     .mainpart {
         flex-direction: column;
         align-items: center;
+        margin: auto;
     }
 
     .projectlist {

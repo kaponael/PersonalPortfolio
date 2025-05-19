@@ -51,15 +51,22 @@ head {
     user-select: none;
 }
 
+main, footer{
+    max-width: 1400px;
+    margin: 0px auto ;
+}
+
+header{
+    background-color: var(--secondary-bg-color);
+}
+
 .body{
-    .page-container {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-}
 
 .content {
     padding-top: 7vh;
@@ -102,11 +109,13 @@ h5{
     font-size: clamp(3em, 10vw, 14em); 
     font-weight: bold;
     color: transparent;
-    width: 100%;
-    text-align: center; 
-    -webkit-text-stroke: 0.1vw var(--main-used-color);
-    letter-spacing: 2vw;
+    width: max-content;
+    -webkit-text-stroke: 2px var(--main-used-color);
+    letter-spacing: clamp(0.6rem, 2vw, 2.8em);
     margin: 0;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
 }
 
 .highlight {
@@ -148,21 +157,16 @@ button {
     content: '';
     position: absolute;
     top: 0;
-    left: -200%;
-    width: 300%;
+    left: -150%;
+    width: 150%;
     height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(209, 221, 237, 0.4),
-        transparent
-    );
+    background: linear-gradient(120deg, transparent, rgba(209, 221, 237, 0.4), transparent);
     transform: skewX(-30deg);
-    animation: shimmer 5s infinite;
+    animation: shimmer 4s infinite;
 }
 
 .secondary-button:hover::before {
-    animation: shimmer-hover 0.5s;
+    animation: shimmer-hover 4s;
 }
 
 @keyframes shimmer {
@@ -170,12 +174,8 @@ button {
         left: -150%;
     }
 
-    50% {
-        left: 100%;
-    }
-
     100% {
-        left: 100%;
+        left: 150%;
     }
 }
 
@@ -185,7 +185,7 @@ button {
     }
 
     100% {
-        left: 100%;
+        left: 150%;
     }
 }
 
@@ -232,18 +232,20 @@ button {
     align-items: center;
 }
 
-.socials i {
+.socials svg {
     transition: fill 0.2s ease;
     transition: background-color 0.2s ease;
-    color: #3684DB;
+    width: 2em;
+    padding: 0.5em 1em;
+    fill: #3684DB;
 }
 
 .socials li:hover {
     background-color: var(--main-used-color);
 }
 
-.socials i:hover {
-    color: var(--secondary-bg-color);
+.socials a:hover svg{
+    fill: var(--secondary-bg-color);
 }
 
 nav a {
@@ -279,11 +281,11 @@ nav a:hover {
 
     nav {
         z-index: 2;
-        position: fixed;
+        position: sticky;
         top: 0;
         left: 0;
         width: 100%;
-        background-color: var(--secondary-bg-color);
+        max-width: 1400px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -291,6 +293,7 @@ nav a:hover {
         box-sizing: border-box;
         height: 7vh;
         transition: 0.3s ease;
+        margin: 0px auto;
     }
 
     nav svg {
