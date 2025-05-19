@@ -1,8 +1,8 @@
-// const path = window.location.pathname;
-//   if (path === "/homepage.html") window.location.replace("/");
-//   if (path === "/aboutme.html") window.location.replace("/aboutme");
-//   if (path === "/portfolio.html") window.location.replace("/portfolio");
-//   if (path === "/contactme.html") window.location.replace("/contactme");
+const path = window.location.pathname;
+  if (path === "/homepage.html") window.location.replace("/");
+  if (path === "/aboutme.html") window.location.replace("/aboutme");
+  if (path === "/portfolio.html") window.location.replace("/portfolio");
+  if (path === "/contactme.html") window.location.replace("/contactme");
 
   class Navbar extends HTMLElement {
     connectedCallback() {
