@@ -31,23 +31,6 @@
     font-weight: 900;
 }
 
-/*desktop*/
-/* .header {
-    font-size: 15vw;
-    font-weight: bold;
-    color: transparent;
-    text-align: center;
-    -webkit-text-stroke: 0.5vh var(--main-used-color);
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-    left: -10.5vw;
-    letter-spacing: 2.3vw;
-    overflow: visible;
-} */
-@media (min-width: 768px) {
-
-}
 
 /* Mobile + Tablet */
 @media (max-width: 1024px) {

@@ -9,28 +9,10 @@
 
 body, head {
     background-color: #1F1F1F;
-    font-family: 'Kumbh Sans', sans-serif;
 }
-
-/* .header {
-    font-size: 15vw; 
-    font-weight: bold;
-    color: transparent;
-    text-align: left; 
-    -webkit-text-stroke: 0.5vh var(--main-used-color);
-    margin: 0;
-    display: block; 
-    position: relative;
-    left: -2.5vw; 
-    letter-spacing: 3.3vw; 
-    white-space: nowrap; 
-    word-spacing: 0.1vw;
-} */
 
 .content{
     flex-grow: 1;
-    /* margin-bottom: 10em;
-    text-align: center; */
 }
 
 .content h2{
