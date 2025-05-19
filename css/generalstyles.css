@@ -21,6 +21,22 @@
     border-radius: 25px;
 }
 
+@font-face {
+  font-family: 'Kumbh Sans';
+  src: url('/font/KumbhSans-VariableFont_YOPQ,wght.woff1') format('woff1');
+  /* font-weight: 400; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kumbh Sans';
+  src: url('/font/KumbhSans-VariableFont_YOPQ,wght.woff1') format('woff1');
+  /* font-weight: 700; */
+  font-style: normal;
+  font-display: swap;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -126,10 +142,15 @@ button {
     content: '';
     position: absolute;
     top: 0;
-    left: -150%;
-    width: 150%;
+    left: -200%; /* More offset */
+    width: 300%;  /* Cover enough area for the shimmer */
     height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(209, 221, 237, 0.4), transparent);
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(209, 221, 237, 0.4),
+        transparent
+    );
     transform: skewX(-30deg);
     animation: shimmer 5s infinite;
 }
@@ -168,11 +189,12 @@ button {
 }
 
 .main-button {
-    padding: 0.7em 2em;
+    padding: 0.8em 2em;
     background-color: var(--main-used-color);
     color: var(--main-bg-color);
     border: 0px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 #game-button {
